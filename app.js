@@ -9,7 +9,7 @@ const standMessageDelay = 2000;
 //reset game
 const newGameBtn = document.getElementById("reset");
 newGameBtn.addEventListener("click", function (e) {
-  location.reload;
+  location.reload();
 });
 
 //mesasges
