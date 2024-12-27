@@ -1,0 +1,71 @@
+body {
+  background-color: #232323;
+  margin: 0;
+  font-family: "Montserrat", "Avenir";
+}
+h1 {
+  text-align: center;
+  line-height: 1.1;
+  font-weight: normal;
+  color: white;
+  background: steelblue;
+  margin: 0;
+  text-transform: uppercase;
+  padding: 20px 0;
+}
+#container {
+  margin: 20px auto;
+  max-width: 600px;
+}
+.asset {
+  width: 30%;
+  background: purple;
+  padding-bottom: 30%;
+  float: left;
+  margin: 1.66%;
+  border-radius: 15%;
+  display: grid;
+  place-items: center;
+}
+
+.center-button {
+  margin-top: 10%;
+}
+
+/* Style for the display container */
+#display {
+  display: flex; /* Use flexbox to align items horizontally */
+  align-items: center; /* Center items vertically */
+  justify-content: space-between; /* Space between money and message */
+  background-color: #f0f0f0; /* Light gray background */
+  border: 2px solid #ccc; /* Light gray border */
+  border-radius: 8px; /* Rounded corners */
+  padding: 10px 20px; /* Padding inside the box */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  margin: 20px; /* Margin around the display box */
+}
+
+/* Style for the money value */
+#money {
+  font-size: 24px; /* Larger font size for emphasis */
+  font-weight: bold; /* Bold text */
+  color: #85bb65; /*money green*/
+}
+
+/* Style for the message container */
+#messageContainer {
+  position: relative; /* Position relative for absolute positioning of messages */
+  margin-left: 20px; /* Space between money and message */
+  display: none; /* Initially hidden */
+  opacity: 1; /* Fully visible */
+  transition: opacity 0.5s ease-out; /* Transition for fade-out effect */
+}
+
+/* Optional: Style for the fade-away messages */
+#messageContainer p {
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  color: white; /* White text color */
+  padding: 5px 10px; /* Padding around the text */
+  border-radius: 5px; /* Rounded corners */
+  margin: 0; /* Remove default margin */
+}
